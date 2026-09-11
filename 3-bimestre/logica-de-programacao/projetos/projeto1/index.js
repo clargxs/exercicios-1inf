@@ -1,19 +1,17 @@
 // CRIE SUA SOLUÇÃO ABAIXO ================
-const cliente  = "Mariana";
-const sobrenome = "Silva";
-const NomeCompleto = cliente+" "+sobrenome;
+const cliente  = "Mariana Silva";
 const cidade = "Fortaleza";
 const produto = "Notebook Pro";
 const categoria = "Notebook";
-const quantidade = 2;
-const descontoPercentual = 10;
 const preco = 3500;
+const quantidade = 2
 const valorPago = 7000;
+const descontoPercentual = 10
 const subtotal = preco*quantidade;
-const desconto = (subtotal*descontoPercentual)/100;
-const valorFinal = subtotal-desconto;
+const valorDesconto = (subtotal*descontoPercentual)/100;
+const valorFinal = subtotal-valorDesconto;
 const troco = valorPago-valorFinal;
-const resumo = `Cliente:${NomeCompleto}
+const resumo = `Cliente:${cliente}
 Cidade:${cidade}
 Produto:${produto}
 Pategoria:${categoria}
@@ -21,14 +19,11 @@ Quantidade:${quantidade}
 Preço:${preco}
 Subtotal:${subtotal}
 Desconto:${descontoPercentual}
-Valor do desconto:${desconto}
-Valor final:${valorFinal}
-Valor pago:${valorPago}
-Troco:${troco}`
+Valor do desconto:R$ ${valorDesconto}
+Valor final:R$ ${valorFinal}
+Valor pago:R$ ${valorPago}
+Troco:R$ ${troco}`
 console.log(resumo)
-
-
-
 
 // === FIM DO CÓDIGO =======================
 // === NÃO FAZER NADA ABAIXO DESSA LINHA ===
